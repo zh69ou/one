@@ -1,0 +1,73 @@
+* { border: 0px; padding: 0px; margin: 0px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+a { text-decoration: none; color: #adb5bd; }
+
+ul li { list-style: none; }
+
+.bbg { background: #fff; }
+
+.container { width: 100%; min-width: 1200px; max-width: 2000px; margin: 0px auto; }
+
+.propbox { min-height: 600px; height: 600px; }
+
+.ctxt { text-align: center; }
+
+.rtxt { text-align: right; }
+
+.ltxt { text-align: left; }
+
+.divide { width: 100%; border-bottom: 1px solid #ccc; height: 24px; clear: both; margin: 16px 0px 32px 0px; text-align: center; }
+.divide a { font-size: 36px; padding: 12px 36px; }
+
+.erect { height: 100%; width: 50%; border-right: 1px solid #ccc; }
+
+.cbox { min-width: 400px; min-height: 200px; width: 30%; margin: 0px auto; position: relative; top: 45%; transform: translateY(-50%); -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); }
+
+.popup { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 100; text-align: center; }
+.popup .bg { position: absolute; left: 0px; top: 0px; z-index: -1; width: 100%; height: 100%; background: #000; filter: alpha(Opacity=60); -moz-opacity: 0.6; opacity: 0.6; }
+.popup .cbox { border: 1px solid #eee; border-radius: 5px; background: #fff; }
+
+.close { background: #dc3545; color: #fff; border: 1px solid #fff; border-radius: 50%; height: 28px; line-height: 24px; width: 28px; font-size: 16px; float: right; }
+
+.nav { width: 100%; height: 48px; line-height: 48px; }
+.nav .logo { padding: 0px 20px; display: inline-block; }
+.nav .logo img { height: 32px; width: auto; vertical-align: middle; }
+.nav .logo .menubut { display: none; }
+.nav .menu, .nav .menu li, .nav .rmenu li { display: inline-block; }
+.nav .menu li { padding: 0px 10px; margin: 0px 20px; }
+.nav .rmenu { float: right; margin: 0px 8px 0px 0px; }
+.nav .rmenu li { padding: 0px 6px; }
+
+.centernav { text-align: center; height: 48px; line-height: 48px; }
+.centernav li { display: inline-block; padding: 0px 10px; margin: 0px 20px; }
+
+.banner { text-align: center; height: 400px; width: 100%; overflow: hidden; position: relative; }
+.banner .showbox .alonebox { height: 400px; position: relative; }
+.banner .showbox .alonebox img { height: 400px; width: auto; }
+.banner .showbox .alonebox .btxt { width: 100%; height: 400px; line-height: 400px; position: absolute; left: 0px; top: 0px; text-align: center; }
+.banner .rightbut, .banner .leftbut { font-size: 36px; height: 400px; line-height: 400px; position: absolute; top: 0px; color: #ccc; vertical-align: middle; }
+.banner .rightbut { right: 28px; }
+.banner .leftbut { left: 28px; }
+.banner .numbut { width: 100%; position: absolute; left: 0px; bottom: 16px; }
+.banner .numbut li { display: inline-block; width: 18px; height: 18px; background: #eee; border-radius: 50%; margin: 0px 12px; }
+.banner .numbut .act { background: #ccc; }
+
+.list3 { width: 32%; display: inline-block; }
+
+.list3line { width: 2%; display: inline-block; }
+
+.list4 { width: 23.5%; display: inline-block; }
+
+.list4line { width: 2%; display: inline-block; }
+
+.card { padding: 0px; border: 1px solid #eee; }
+.card .content { font-size: 16px; padding: 6px 16px; line-height: 28px; }
+
+.title { font-size: 20px; padding: 20px 16px 8px; }
+
+.group-input { border: 1px solid #eee; border-radius: 8px; line-height: 32px; width: 80%; margin: 8px auto; }
+.group-input > .prefix { display: inline-block; text-align: right; padding-right: 8px; width: 30%; height: 32px; line-height: 32px; border: 0px; border-right: 1px solid #eee; }
+.group-input > input { display: inline-block; width: 70%; height: 32px; line-height: 32px; border: 0px; border-radius: 0px 8px 8px 0px; padding-left: 8px; }
+
+.group-but { line-height: 32px; display: inline-block; margin: 12px auto 0px; }
+.group-but button { height: 32px; line-height: 32px; background-color: #fff; margin: 6px 18px; padding: 0px 16px; border: 1px solid #eee; border-radius: 8px; }

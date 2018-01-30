@@ -1,0 +1,76 @@
+{% extends 'base/public/base.phtml' %}
+
+{% block title %}首页{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="/css/wt.css">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+    	<div class="nav">
+	    	<div class="logo">
+	    		<a href="" title="首页" ><img src="image/logo.png" alt="logo" title="logo">品牌LOGO</a>
+	    		<span class="menubut"></span>
+	    	</div>
+			<ul class="menu"><li><a href="/" title="首页">首页</a></li><li><a href="#" title="新闻中心">新闻中心</a></li><li><a href="#" title="功能中心">功能中心</a></li><li><a href="#" title="帮助中心">帮助中心</a><li></ul>
+			<ul class="rmenu"><li><a href="#" title="会员中心">会员中心</a></li><li><a href="#" title="退出">退出</a></li></ul>
+    	</div>
+    	<div class="banner">
+    		<div class="showbox">
+    			<div class="alonebox"><a href="#"><img src="image/banner.png" alt="banner"><div class="btxt">banner1说明文字</div></a></div>
+    			<div class="alonebox"><a href="#"><img src="image/banner.png" alt="banner"><div class="btxt">banner2说明文字</div></a></div>
+    			<div class="alonebox"><a href="#"><img src="image/banner.png" alt="banner"><div class="btxt">banner3说明文字</div></a></div>
+    		</div>
+    		<div class="rightbut">&gt;</div>
+    		<div class="leftbut">&lt;</div>
+    		<ul class="numbut">
+    			<li class="act">&nbsp;</li>
+    			<li>&nbsp;</li>
+    			<li>&nbsp;</li>
+    		</ul>
+    	</div>
+    </div>
+	<div class="divide"><a href="#" class="bbg">栏目</a></div>
+    <ul class="container">
+    	<li class="list3 card">
+    		<h3 class="title">标题</h3>
+    		<div class="content">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
+    	</li><li class="list3line"></li><li class="list3 card">
+    		<h3 class="title">标题</h3>
+			<div class="content">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
+    	</li><li class="list3line"></li><li class="list3 card">
+			<h3 class="title">标题</h3>
+			<div class="content">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
+    	</li>
+    </ul>
+    <div class="divide"><a href="#" class="bbg">栏目</a></div>
+    <ul class="container">
+    	<li class="list4 card">
+    		<h3 class="title">标题</h3>
+    		<div class="content">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
+    	</li><li class="list4line"></li><li class="list4 card">
+    		<h3 class="title">标题</h3>
+			<div class="content">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
+    	</li><li class="list4line"></li><li class="list4 card">
+			<h3 class="title">标题</h3>
+			<div class="content">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
+    	</li><li class="list4line"></li><li class="list4 card">
+			<h3 class="title">标题</h3>
+			<div class="content">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
+    	</li>
+    </ul>
+    <ul class="container centernav">
+    	<li>关于我们</li>
+    	<li>使用帮助</li>
+    	<li>意见见解</li>
+    	<li>合作共赢</li>
+    </ul>
+    <div class="popup">
+    	<div class="bg"></div>
+    	<div class="cbox">
+    		<div class="close">&times;</div>
+    		{% include "base/public/loginbox.phtml" %}
+    	</div>
+    </div>
+{% endblock %}

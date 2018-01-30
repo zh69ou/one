@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>{% block title %}{% endblock %}-A6VI</title>
+    <link rel='stylesheet' href='css/public.css' />
+	{% block head %}
+    {% endblock %}
+</head>
+<body>
+{% block content %}{% endblock %}
+<div class="container centernav">
+	<span>&copy; A6VI {{date('Y',time())}}, All rights reserved.</span>
+</div>
+{% block footer %}
+{% endblock %}
+</body>
+</html>

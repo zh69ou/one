@@ -1,0 +1,17 @@
+* {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #adb5bd; }
+
+ul li {
+  list-style: none; }
+
+.bbg {
+  background: #fff; }
+
+/*# sourceMappingURL=pc.css.map */

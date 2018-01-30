@@ -1,0 +1,19 @@
+{% if persistent.name %}
+<div class="title">登录</div>
+<form action="#">
+	<div class="group-input"><label class="prefix" for="username">账号</label><input type="text" name="username" id="username" value="{{persistent.name}}" placeholder="用户名/电话/邮箱"></div>
+	<div class="group-input"><label class="prefix" for="password">密码</label><input type="password" name="password" id="password" value="" placeholder="密码"></div>
+	<div class="group-but"><button type="reset">重置</button><button type="button">登录</button></div>
+	<input type='hidden' name='<?php echo $this->security->getTokenKey() ?>' value='<?php echo $this->security->getToken() ?>'/>
+</form>
+<div class="divide"></div>
+{% else %}
+<div class="title">登录</div>
+<form action="#">
+	<div class="group-input"><label class="prefix" for="username">账号</label><input type="text" name="username" id="username" value="" placeholder="用户名/电话/邮箱"></div>
+	<div class="group-input"><label class="prefix" for="password">密码</label><input type="password" name="password" id="password" value="" placeholder="密码"></div>
+	<div class="group-but"><button type="reset">重置</button><button type="button">登录</button></div>
+	<input type='hidden' name='<?php echo $this->security->getTokenKey() ?>' value='<?php echo $this->security->getToken() ?>'/>
+</form>
+<div class="divide"></div>
+{% endif %}
