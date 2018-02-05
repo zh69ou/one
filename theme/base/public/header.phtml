@@ -1,24 +1,33 @@
-<div class="container">
-	<div class="nav">
-    	<div class="logo">
-    		<a href="" title="首页" ><img src="image/logo.png" alt="logo" title="logo">品牌LOGO</a>
-    		<span class="menubut"></span>
-    	</div>
-		<ul class="menu"><li><a href="/" title="首页">首页</a></li><li><a href="#" title="新闻中心">新闻中心</a></li><li><a href="#" title="功能中心">功能中心</a></li><li><a href="#" title="帮助中心">帮助中心</a><li></ul>
-		<ul class="rmenu"><li><a href="#" title="会员中心">会员中心</a></li><li><a href="#" title="退出">退出</a></li></ul>
-	</div>
-	<div class="banner">
-		<div class="showbox">
-			<div class="alonebox"><a href="#"><img src="image/banner.png" alt="banner"><div class="btxt">banner1说明文字</div></a></div>
-			<div class="alonebox"><a href="#"><img src="image/banner.png" alt="banner"><div class="btxt">banner2说明文字</div></a></div>
-			<div class="alonebox"><a href="#"><img src="image/banner.png" alt="banner"><div class="btxt">banner3说明文字</div></a></div>
-		</div>
-		<div class="rightbut">&gt;</div>
-		<div class="leftbut">&lt;</div>
-		<ul class="numbut">
-			<li class="act">&nbsp;</li>
-			<li>&nbsp;</li>
-			<li>&nbsp;</li>
-		</ul>
-	</div>
-</div>
+<nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/">A6VI</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="A6VI">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbars">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">首页</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">企业展示</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">功能软件</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">新闻资讯</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav my-2 my-md-0">
+        <li class="nav-item">
+          <a class="btn btn-outline-primary" href="{{url('/gallery')}}">登陆</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-primary" href="/gallery/regin">注册</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

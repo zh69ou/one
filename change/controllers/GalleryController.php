@@ -21,7 +21,7 @@ class GalleryController extends Controller
     }
 	/**
      * @Route(
-     *     '/',
+     *     '/adlogin',
      *	   methods={'GET'},
      *     name='adlogin'
      * )

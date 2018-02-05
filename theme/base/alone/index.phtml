@@ -3,51 +3,178 @@
 {% block title %}首页{% endblock %}
 
 {% block head %}
-<link rel="stylesheet" href="/css/wt.css">
+<link rel="stylesheet" href="/css/swiper.css">
 {% endblock %}
 
 {% block content %}
     {% include "base/public/header.phtml" %}
-	<div class="divide"><a href="#" class="bbg">栏目</a></div>
-    <ul class="container">
-    	<li class="list3 card">
-    		<h3 class="title">标题</h3>
-    		<div class="content">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
-    	</li><li class="list3line"></li><li class="list3 card">
-    		<h3 class="title">标题</h3>
-			<div class="content">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
-    	</li><li class="list3line"></li><li class="list3 card">
-			<h3 class="title">标题</h3>
-			<div class="content">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
-    	</li>
-    </ul>
-    <div class="divide"><a href="#" class="bbg">栏目</a></div>
-    <ul class="container">
-    	<li class="list4 card">
-    		<h3 class="title">标题</h3>
-    		<div class="content">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
-    	</li><li class="list4line"></li><li class="list4 card">
-    		<h3 class="title">标题</h3>
-			<div class="content">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
-    	</li><li class="list4line"></li><li class="list4 card">
-			<h3 class="title">标题</h3>
-			<div class="content">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
-    	</li><li class="list4line"></li><li class="list4 card">
-			<h3 class="title">标题</h3>
-			<div class="content">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
-    	</li>
-    </ul>
-    <ul class="container centernav">
-    	<li>关于我们</li>
-    	<li>使用帮助</li>
-    	<li>意见见解</li>
-    	<li>合作共赢</li>
-    </ul>
-    <div class="popup" style="display: none;">
-    	<div class="bg"></div>
-    	<div class="cbox">
-    		<div class="close">&times;</div>
-    		{# include "base/public/loginbox.phtml" #}
-    	</div>
-    </div>
+    <main role="main">
+        <section class="text-center">
+            <div class="container swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide jumbotron">
+                        <h1>Album example1</h1>
+                        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary my-2">Main call to action</a>
+                            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+                        </p>
+                    </div>
+                    <div class="swiper-slide jumbotron">
+                        <h1>Album example2</h1>
+                        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary my-2">Main call to action</a>
+                            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+          <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 box-shadow">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Free</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>10 users included</li>
+                  <li>2 GB of storage</li>
+                  <li>Email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+              </div>
+            </div>
+            <div class="card mb-4 box-shadow">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Pro</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>20 users included</li>
+                  <li>10 GB of storage</li>
+                  <li>Priority email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+              </div>
+            </div>
+            <div class="card mb-4 box-shadow">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Enterprise</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>30 users included</li>
+                  <li>15 GB of storage</li>
+                  <li>Phone and email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                      <div class="card mb-4 box-shadow">
+                        <!-- <img class="card-img-top" alt="Card image cap"> -->
+                        <div class="card-body">
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card mb-4 box-shadow">
+                        <!-- <img class="card-img-top" alt="Card image cap"> -->
+                        <div class="card-body">
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card mb-4 box-shadow">
+                        <!-- <img class="card-img-top" alt="Card image cap"> -->
+                        <div class="card-body">
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row mb-2">
+                    <div class="col-md-6">
+                      <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                        <div class="card-body d-flex flex-column align-items-start">
+                          <strong class="d-inline-block mb-2 text-primary">World</strong>
+                          <h3 class="mb-0">
+                            <a class="text-dark" href="#">Featured post</a>
+                          </h3>
+                          <div class="mb-1 text-muted">Nov 12</div>
+                          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#">Continue reading</a>
+                        </div>
+                        <!-- <img class="card-img-right flex-auto d-none d-md-block" alt="Card image cap"> -->
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                        <div class="card-body d-flex flex-column align-items-start">
+                          <strong class="d-inline-block mb-2 text-success">Design</strong>
+                          <h3 class="mb-0">
+                            <a class="text-dark" href="#">Post title</a>
+                          </h3>
+                          <div class="mb-1 text-muted">Nov 11</div>
+                          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#">Continue reading</a>
+                        </div>
+                        <!-- <img class="card-img-right flex-auto d-none d-md-block"  alt="Card image cap"> -->
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% include "base/public/footer.phtml" %}
+{% endblock %}
+
+{% block footer %}
+<script type="text/javascript" src="js/plug.js"></script>
+<script type="text/javascript">
+    var mySwiper = new Swiper('.swiper-container', {
+        speed: 400,
+        spaceBetween: 100
+    });
+</script>
 {% endblock %}
