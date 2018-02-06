@@ -18,6 +18,7 @@ return new Config([
         'cryptstr'      => '#zh/&/change$=dp?.$'
     ],
     'cache' => [
+        'base'          =>  BASE_PATH."/cache/",
     	'view'			=>	BASE_PATH."/cache/views/",
     	'viewtime'		=>	10,//86400
     	'viewprefix'	=>	"temp_",

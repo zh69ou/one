@@ -17,6 +17,7 @@ class GalleryController extends Controller
      */
     public function indexAction()
     {
+        // $this->persistent->abc = 'zhou';
     	return $this->view->render('base/alone/login');
     }
 	/**
@@ -28,7 +29,6 @@ class GalleryController extends Controller
      */
     public function adloginAction()
     {
-    	$this->persistent->name = 'abc';
     	return $this->view->render('base/admin/login');
     }
 	/**
